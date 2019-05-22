@@ -1,0 +1,76 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6007083292843501813",
+      "lastPropertyId": "2:2362200983116482765",
+      "name": "Carrier",
+      "properties": [
+        {
+          "id": "1:7088317207687967727",
+          "name": "id"
+        },
+        {
+          "id": "2:2362200983116482765",
+          "name": "name"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:3712823037367338524",
+      "lastPropertyId": "4:5060316347762628522",
+      "name": "Driver",
+      "properties": [
+        {
+          "id": "1:261872062233981278",
+          "name": "id"
+        },
+        {
+          "id": "2:2830879206474257258",
+          "name": "name"
+        },
+        {
+          "id": "3:9144122389337695503",
+          "indexId": "1:1726432584568243095",
+          "name": "truckId"
+        },
+        {
+          "id": "4:5060316347762628522",
+          "indexId": "2:2163482547577786320",
+          "name": "carrierId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:3902798622887791799",
+      "lastPropertyId": "2:1150783481390468760",
+      "name": "Truck",
+      "properties": [
+        {
+          "id": "1:4095977399476282633",
+          "name": "id"
+        },
+        {
+          "id": "2:1150783481390468760",
+          "name": "model"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:3902798622887791799",
+  "lastIndexId": "2:2163482547577786320",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
