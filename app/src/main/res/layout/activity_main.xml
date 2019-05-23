@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,180 +7,229 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/activity_main_carriers_count_label"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="Carriers count: "
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@id/activity_main_carriers_count_text_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/activity_main_carriers_count_text_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/activity_main_carriers_count_label"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/activity_main_carriers_count_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Carriers count: "
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/activity_main_carriers_count_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/activity_main_drivers_count_label"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="Drivers count: "
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@id/activity_main_drivers_count_text_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_carriers_count_label" />
+        <TextView
+            android:id="@+id/activity_main_carriers_count_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="0"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_main_carriers_count_label"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/activity_main_drivers_count_text_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/activity_main_drivers_count_label"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_carriers_count_text_view" />
+        <TextView
+            android:id="@+id/activity_main_drivers_count_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Drivers count: "
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/activity_main_drivers_count_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_carriers_count_label" />
 
-    <TextView
-        android:id="@+id/activity_main_trucks_count_label"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="Trucks count: "
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@id/activity_main_trucks_count_text_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_drivers_count_label" />
+        <TextView
+            android:id="@+id/activity_main_drivers_count_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="0"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_main_drivers_count_label"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_carriers_count_text_view" />
 
-    <TextView
-        android:id="@+id/activity_main_trucks_count_text_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/activity_main_trucks_count_label"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_drivers_count_text_view" />
+        <TextView
+            android:id="@+id/activity_main_trucks_count_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Trucks count: "
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/activity_main_trucks_count_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_drivers_count_label" />
 
-    <TextView
-        android:id="@+id/activity_main_truck_label"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:text="TRUCK"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_trucks_count_text_view" />
+        <TextView
+            android:id="@+id/activity_main_trucks_count_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="0"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_main_trucks_count_label"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_drivers_count_text_view" />
 
-    <EditText
-        android:id="@+id/activity_main_truck_model_edit_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_truck_label"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/activity_main_truck_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:text="TRUCK"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_trucks_count_text_view" />
 
-    <TextView
-        android:id="@+id/activity_main_driver_label"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:text="DRIVER"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_truck_model_edit_text" />
+        <EditText
+            android:id="@+id/activity_main_truck_model_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Truck model"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_truck_label" />
 
-    <EditText
-        android:id="@+id/activity_main_driver_name_edit_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_driver_label"
-        app:layout_constraintEnd_toStartOf="@id/activity_main_driver_trucks_spinner"/>
+        <TextView
+            android:id="@+id/activity_main_driver_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:text="DRIVER"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_truck_model_edit_text" />
 
-    <Spinner
-        android:id="@+id/activity_main_driver_trucks_spinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/activity_main_driver_name_edit_text"
-        app:layout_constraintBottom_toBottomOf="@id/activity_main_driver_name_edit_text"
-        app:layout_constraintStart_toEndOf="@id/activity_main_driver_name_edit_text"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <EditText
+            android:id="@+id/activity_main_driver_name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Driver name"
+            app:layout_constraintEnd_toStartOf="@id/activity_main_driver_trucks_spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_driver_label" />
 
-    <TextView
-        android:id="@+id/activity_main_carrier_label"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:text="CARRIER"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_driver_name_edit_text" />
+        <Spinner
+            android:id="@+id/activity_main_driver_trucks_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/activity_main_driver_name_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_main_driver_name_edit_text"
+            app:layout_constraintTop_toTopOf="@id/activity_main_driver_name_edit_text" />
 
-    <EditText
-        android:id="@+id/activity_main_carrier_name_edit_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_main_carrier_label"
-        app:layout_constraintEnd_toStartOf="@id/activity_main_driver_trucks_spinner"/>
+        <TextView
+            android:id="@+id/activity_main_carrier_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:text="CARRIER"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_driver_name_edit_text" />
 
-    <Spinner
-        android:id="@+id/activity_main_carrier_drivers_spinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/activity_main_carrier_name_edit_text"
-        app:layout_constraintBottom_toBottomOf="@id/activity_main_carrier_name_edit_text"
-        app:layout_constraintStart_toEndOf="@id/activity_main_carrier_name_edit_text"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <EditText
+            android:id="@+id/activity_main_carrier_name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Carrier name"
+            app:layout_constraintEnd_toStartOf="@id/activity_main_driver_trucks_spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_carrier_label" />
 
-    <TextView
-        android:id="@+id/activity_main_add_carrier_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add carrier"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        <Spinner
+            android:id="@+id/activity_main_carrier_drivers_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/activity_main_carrier_name_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_main_carrier_name_edit_text"
+            app:layout_constraintTop_toTopOf="@id/activity_main_carrier_name_edit_text" />
 
-    <TextView
-        android:id="@+id/activity_main_add_driver_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add driver"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/activity_main_add_truck_text_view"
-        app:layout_constraintStart_toEndOf="@id/activity_main_add_carrier_text_view" />
+        <TextView
+            android:id="@+id/activity_main_add_truck_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add truck"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_main_truck_label"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/activity_main_add_truck_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add truck"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/activity_main_add_driver_text_view"/>
+        <TextView
+            android:id="@+id/activity_main_add_driver_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add driver"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_main_driver_label"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/activity_main_add_carrier_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add carrier"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_main_carrier_label"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_main_remove_all_carriers_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Remove carriers"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/activity_main_remove_all_drivers_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_add_carrier_with_multiple_drivers_text_view" />
+
+        <TextView
+            android:id="@+id/activity_main_remove_all_drivers_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Remove drivers"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/activity_main_remove_all_trucks_text_view"
+            app:layout_constraintStart_toEndOf="@id/activity_main_remove_all_carriers_text_view"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_add_carrier_with_multiple_drivers_text_view" />
+
+        <TextView
+            android:id="@+id/activity_main_remove_all_trucks_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Remove trucks"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_main_remove_all_drivers_text_view"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_add_carrier_with_multiple_drivers_text_view" />
+
+        <TextView
+            android:id="@+id/activity_main_add_carrier_with_multiple_drivers_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Add carrier with multiple drivers"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_carrier_name_edit_text" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

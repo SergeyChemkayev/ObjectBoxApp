@@ -1,5 +1,10 @@
 package com.example.objectboxapp.models;
 
+import com.example.objectboxapp.ObjectBox;
+
+import java.util.List;
+
+import io.objectbox.BoxStore;
 import io.objectbox.annotation.Backlink;
 import io.objectbox.annotation.Entity;
 import io.objectbox.annotation.Id;
@@ -14,4 +19,16 @@ public class Carrier {
 
     @Backlink(to = "carrier")
     public ToMany<Driver> drivers;
+
+    public static void removeCarriersCascade(List<Carrier> carriers) {
+        BoxStore boxStore = ObjectBox.getStore();
+        boxStore.runInTx(() -> {
+            for (Carrier carrier : carriers) {
+                if (carrier.drivers != null && !carrier.drivers.isEmpty()) {
+                    Driver.removeDriversCascade(carrier.drivers);
+                }
+            }
+            boxStore.boxFor(Carrier.class).remove(carriers);
+        });
+    }
 }
